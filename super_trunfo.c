@@ -9,6 +9,7 @@ struct Estado {
     float area;
     long long pib;
     int pontos_turisticos;
+
 };
 
  struct Estado baralho[2];
@@ -22,7 +23,8 @@ struct Estado {
       baralho[0].area = 250000.1;
       baralho[0].pib = 220000000000;
       baralho[0].pontos_turisticos = 150;
-    
+      
+
       
       // Carta 2: Rio de Janeiro
       strcpy(baralho[1].nome, "Rio de Janeiro");
@@ -32,7 +34,8 @@ struct Estado {
       baralho[1].area = 44500.1;
       baralho[1].pib = 92000000000;
       baralho[1].pontos_turisticos = 185;
- 
+      
+
     }
 
  void exibirCarta(struct Estado carta) {
@@ -44,6 +47,7 @@ struct Estado {
      printf("Area: (km2): %.2f\n", carta.area);
      printf("PIB (R$): %lld\n", carta.pib);
      printf("Pontos Turisticos: %d\n", carta.pontos_turisticos);
+     
      printf("-------------------------------\n");
 
  }
